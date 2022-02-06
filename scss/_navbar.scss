@@ -1,0 +1,47 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 2rem 0;
+    .brand__container {
+        display: flex;
+        .brand {
+            h2 {
+                span {
+                    margin-left: 0.5rem;
+                    font-size: 0.9rem;
+                    letter-spacing: 0.1rem;
+                    color: #45b649;
+                }
+            }
+        }
+        .toggle {
+            display: none;
+        }
+    }
+    .links {
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            li {
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    &:hover {
+                        @include gradientText;
+                    }
+                }
+                i {
+                    &:hover {
+                        @include gradientText;
+                    }
+                }
+            }
+            button: {
+                padding: 0.5rem;
+            }
+        }
+    }
+}
