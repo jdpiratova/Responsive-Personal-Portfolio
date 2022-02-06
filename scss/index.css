@@ -38,7 +38,7 @@ ul {
   background: var(--gradient);
 }
 
-.defualtMargin {
+.defaultMargin {
   margin: 0 14rem;
 }
 
@@ -61,6 +61,33 @@ button {
   background-clip: content-box, border-box;
   -webkit-box-shadow: 2px 1000px 1px #0b0b0b inset;
           box-shadow: 2px 1000px 1px #0b0b0b inset;
+}
+
+.spring {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 6rem 0;
+}
+
+.spring .coil {
+  border-top: white dashed 0.01rem;
+  width: 49.75%;
+}
+
+.spring .bar {
+  width: 0.5%;
+  height: 7rem;
+}
+
+.spring.right {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .navbar {
@@ -120,5 +147,51 @@ button {
   background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  overflow: hidden;
+  height: 60vh;
+}
+
+.hero .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 2 rem;
+}
+
+.hero .content .title h1 {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 6vw;
+}
+
+.hero .image {
+  position: relative;
+}
+
+.hero .image img {
+  position: absolute;
+  bottom: 0;
+  height: 85vh;
+  width: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=index.css.map */
