@@ -53,3 +53,33 @@ button {
         color: rgb(153, 153, 153);
     }
 }
+
+h3 {
+    color: white;
+}
+
+p {
+    color: rgb(129, 128, 128);
+}
+
+.design {
+    position: relative;
+    .background {
+        height: 10rem;
+        width: 12rem;
+        background: linear-gradient(to right, #c5e35b, #45b649);
+        position: absolute;
+        z-index: -1;
+        left: -10px;
+        top: -8px;
+    }
+}
+
+.right {
+    .background {
+        top: auto;
+        left: auto;
+        right: -10px;
+        bottom: -8px;
+    }
+}
