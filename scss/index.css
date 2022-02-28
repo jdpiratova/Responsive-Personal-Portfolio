@@ -43,7 +43,7 @@ ul {
 
 button {
   color: white;
-  padding: 1rem 1.8rem;
+  padding: 1.2rem 1.8rem;
   text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,6 +142,24 @@ p {
   bottom: -8px;
 }
 
+.scrollToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #303030;
+  z-index: 20;
+  padding: 1rem, 1.3rem;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+.scrollToTop i {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.8rem;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,7 +199,6 @@ p {
       -ms-flex-align: center;
           align-items: center;
   gap: 3rem;
-  button-padding: 0.5rem;
 }
 
 .navbar .links ul li a {
